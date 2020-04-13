@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# unit tests
+%bcond_with	tests	# unit tests (require already installed package???)
 
 Summary:	Sphinx API for Web Apps
 Summary(pl.UTF-8):	API Sphinksa dla aplikacji WWW
@@ -19,6 +19,8 @@ BuildRequires:	python3-setuptools
 BuildRequires:	python3-Sphinx >= 1.8
 BuildRequires:	python3-pytest
 BuildRequires:	python3-six
+# don't know why, test use already installed package
+BuildRequires:	python3-spinxcontrib-websupport >= 1.1.2
 BuildRequires:	python3-sqlalchemy
 BuildRequires:	python3-whoosh
 %endif
