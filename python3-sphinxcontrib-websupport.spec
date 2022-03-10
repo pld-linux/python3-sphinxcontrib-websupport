@@ -5,13 +5,13 @@
 Summary:	Sphinx API for Web Apps
 Summary(pl.UTF-8):	API Sphinksa dla aplikacji WWW
 Name:		python3-sphinxcontrib-websupport
-Version:	1.2.1
-Release:	2
+Version:	1.2.4
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/sphinxcontrib-websupport/
 Source0:	https://files.pythonhosted.org/packages/source/s/sphinxcontrib-websupport/sphinxcontrib-websupport-%{version}.tar.gz
-# Source0-md5:	4fe4d07afe1556c65182d0437228d7bb
+# Source0-md5:	eecfd8dc4933bd28c07ffb5e64fa2444
 URL:		https://pypi.org/project/sphinxcontrib-websupport/
 BuildRequires:	python3-modules >= 1:3.5
 BuildRequires:	python3-setuptools
@@ -19,6 +19,7 @@ BuildRequires:	python3-setuptools
 BuildRequires:	python3-Sphinx >= 1.8
 BuildRequires:	python3-pytest
 BuildRequires:	python3-six
+BuildRequires:	python3-spinxcontrib-serializinghtml
 # don't know why, test use already installed package
 BuildRequires:	python3-spinxcontrib-websupport >= 1.1.2
 BuildRequires:	python3-sqlalchemy
